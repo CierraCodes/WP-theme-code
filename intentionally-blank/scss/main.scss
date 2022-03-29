@@ -1,0 +1,44 @@
+/* Baseline */
+
+/* I didnt use a grid system for this site to refresh % skills hehe */
+@import "./base/breakpoints.scss";
+@import "./base/site-variables.scss";
+@import "./base/grid.scss";
+@import "./base/typography.scss";
+@import "./base/base.scss";
+@import "./base/animations.scss";
+@import "./base/forms.scss";
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/buttons.scss";
+
+@import "./page/case-study.scss";
+@import "./page/contact.scss";
+@import "./page/referral.scss";
+@import "./page/story.scss";
+@import "./page/service.scss";
+
+
+@import "./partials/lg-home-banner.scss";
+@import "./partials/lg-city-banner.scss";
+@import "./partials/cta-marketing-content.scss";
+@import "./partials/branding-cards.scss";
+@import "./partials/heading-for-sections.scss";
+@import "./partials/testimonial-slider.scss";
+@import "./partials/contact-layout.scss";
+@import "./partials/global-cta.scss";
+@import "./partials/logos.scss";
+@import "./partials/hero.scss";
+@import "./partials/hero-with-text.scss";
+@import "./partials/single-holder.scss";
+@import "./partials/double-holder.scss";
+@import "./partials/service-single-icons.scss";
+@import "./partials/heroorvideo.scss"; 
+@import "./partials/letter.scss"; 
+@import "./partials/bottom-cta.scss";
+@import "./partials/talented-team.scss";
+@import "./partials/popout-forms.scss";
+
+@import "./single/case-study.scss";
+@import "./single/service.scss";

@@ -1,0 +1,159 @@
+.single-content-holder {
+
+    @include xl {
+      
+    }
+    .container-fluid {
+
+        @include xl {
+            width: 65%;
+            margin: 0 auto;
+        }
+
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'AvenirSemiBold', sans-serif;
+        font-size: 10vw;
+
+        @include md {
+            font-size: 7vw;
+        }
+
+        @include lg {
+            font-size: 5vw;
+        }
+        
+        @include xl {
+            font-size: 4vw;
+           
+        }
+    }
+
+    h2 {
+        font-family: 'AvenirSemiBold', sans-serif;
+        font-size: 4.5vw;
+
+        @include md {
+            font-size: 4vw;
+        }
+
+        @include lg {
+            font-size: 3vw;
+        }
+
+        @include xl {
+            font-size: 3vw;
+           
+        }
+    }
+
+    h3 {
+        font-family: 'AvenirSemiBold', sans-serif;
+        font-size: 3.9vw;
+        @include xl {
+            // font-size: 2.3vw;
+            font-size: 1.9vw;
+            // margin-bottom: 3%;
+        }
+    }
+
+    p {
+        font-size: 3.5vw;
+        font-family: 'CharterRegular', sans-serif;
+
+        @include md {
+            font-size: 3vw;
+            padding-top: 3%;
+        }
+
+        @include lg {
+            font-size: 1.7vw;
+        }
+
+        @include xl {
+            font-size: 1vw;
+        }
+    }
+
+    img {
+        max-width: 50px;
+    }
+
+    &#service-landing-page {
+            @include xl {
+                margin: 0;
+                padding: 3% 0;
+            }
+
+            .container-fluid {
+                @include xl {
+                   padding:0;
+                }
+
+                h3 {
+                    font-family: 'AvenirReg', sans-serif;
+                }
+
+                p {
+                    padding-top: 0;
+
+                    &:first-of-type {
+                        padding-top: 2%;
+                    }
+
+                    &:last-of-type {
+                        padding-top: 1%;
+                    }
+
+                    @include xl {
+                        width: 70%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+    }
+
+    &#social-media-content {
+        @include xl {
+            padding: 0;
+        }
+
+        .container-fluid {
+            @include xl {
+                width: 65%;
+            }
+           
+        }
+
+        h1 {
+          
+
+            @include xl {
+             
+            }
+        }
+
+        h3 {
+            font-family: 'AvenirReg', sans-serif;
+        }
+
+        p {
+            @include xl {
+                padding-top: 2%;
+                font-size: 1vw;
+            }
+        }
+
+        span {
+            @include xl {
+                font-size: 1.1vw;
+                font-family: 'AvenirSemiBold', sans-serif;
+            }
+        }
+    }
+
+}
+

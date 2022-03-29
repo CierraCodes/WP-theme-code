@@ -1,0 +1,144 @@
+@include md {
+    #service-page {
+   
+        
+        .container-fluid {
+            width: 100%;
+            padding: 0;
+            
+            .marketing-txt {
+                padding: 2rem 2rem 0rem 2rem;
+                width: 95%;
+                margin: 0 auto;
+            }
+    
+
+            p {
+                padding: 0.5rem 0;
+            
+            }
+        }
+        
+    }
+    
+}
+
+
+
+
+@include xl {
+    #service-page-card-title {
+        &.single-content-holder {
+            margin-bottom: 1%;
+          
+            .container-fluid {
+                width: 65%;
+            }
+    
+            h1 {
+                font-family: 'AvenirSemiBold', sans-serif;
+                text-transform: uppercase;
+                margin-bottom: 0%;   
+                font-size: 2.1vmax;
+    
+            }
+    
+            p {
+                font-family: "CharterRegular", sans-serif;
+                font-size: 1.2vmax;
+                padding-top: 0;
+                margin-top: 0;
+            }
+        }
+    } 
+    
+    #service-page-cta { 
+        padding: 0;
+        margin: 0;
+        background-color: rgba(89, 113, 126, 0.7);
+        
+    
+        .global-cta-holder { 
+            margin-top: 0px;
+            padding-top: 0;
+            padding-bottom: 1.5%;
+        }
+    }
+    
+    #service-page {
+        margin-bottom: 0;
+    
+        .container-fluid {
+            width: 100%;
+            padding: 0;
+            height: 100%;
+    
+            .marketing-txt {
+                padding: 0;
+                display: flex;
+                height: 50%;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .bubble-holder {
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                height: 37%;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .container {
+                    margin: 0 auto;
+                    padding: 0;
+                }
+
+                h1 {
+                    font-family: 'AvenirSemiBold', sans-serif;
+                    font-size: 1.8vw;
+                    text-transform: uppercase;
+                }
+        
+                span {
+                    font-family: 'AvenirSemiBold', sans-serif;
+                    font-size: 1vw;
+                }
+            }
+    
+            .service-bubble-content {
+                padding: 0 1%;
+            }
+    
+            h1 {
+                font-size: 4vw;
+                padding: 0;
+                margin: 0;
+            }
+    
+            h3 {
+                font-size: 1.9vw;
+                padding: 0;
+                margin: 0 0 1%;
+            }
+    
+            p {
+                width: 75%;
+                padding: 1% 0;
+                margin: 0 auto;
+            }
+        }
+    
+        .global-cta-holder {
+            background-color: rgba(89, 113, 126, 0.7);
+            padding: 0;
+            height: 13%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+    }
+}

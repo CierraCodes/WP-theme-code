@@ -1,0 +1,442 @@
+
+
+.branding-cards-section {
+    position: relative;
+
+    @include xl {
+        // margin-bottom: 6.5%;
+        // padding-top: 1%;
+    }
+    .container-fluid {
+        padding: 0;
+
+        @include xl {
+            width: 100%;
+            margin: 6% auto;
+        }
+
+        
+       
+    }
+
+    .global-cta-holder {
+        position: relative;
+    }
+
+    .taglinee {
+        display: none;
+        @include xl {
+            display: block;
+            padding: 1% 0 0.5%;
+        }
+    }
+
+    .tagline-checked- {
+        display: none;
+    }
+ 
+    
+    .tagline-checked-1 {
+        display: none;
+
+        @include xl {
+            background: #294858;
+            display: block;
+            height: 25px;
+            width: 2px;
+            margin: 0 auto;
+            border: none;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                height: 10px;
+                width: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #294858;
+                bottom: -10px;
+            }
+        }
+
+        
+    }
+
+
+    
+
+    .branding-cards-holder {
+        position: relative;
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 15px;
+        z-index: 1000;
+        background: transparent;
+        margin: 1rem auto;
+      
+
+        &.animated {
+            .branding-cards {
+                transition: transform 1s ease;
+            }
+        }
+
+        @include md {
+            width: 90%;
+           
+            margin: 4rem auto;
+        }
+
+        @include xl {
+            padding: 0;
+            background-color: rgba(89, 113, 126, 0.7);
+            width: 65%;
+            margin: 4.5% auto 3.5%;
+        }
+
+        .slick-slide{
+            padding: 1rem;
+        }
+
+       .bg-holder {
+            padding: 2rem 0 3rem;
+            background-color: rgba(89, 113, 126, 0.7);
+
+            @include md {
+                padding: 0;
+                background: transparent;
+            }
+       }
+
+       .slick-dots {
+      
+
+            li button {
+                &:before {
+                    font-size: 33px;
+                }
+            }
+
+            
+       }
+        
+
+        .branding-cards {
+            width: 85%;
+            padding: 1rem;
+            background-image: url(/wp-content/uploads/bg2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            margin: 0 auto;
+            // margin: 1.5rem 0;
+            border-radius: 15px;
+            box-shadow: 0 7px 8px rgba(0,0,0,0.3);
+             
+            @include xl {
+                &:hover {
+                    transform: scale(1.1);
+                   
+                }
+            }
+            
+
+
+            @include md {
+                width: 31%;
+                padding: 0.5rem;
+                margin: 1%;
+
+            }
+
+            @include xl {
+                width: 29%;
+                padding: 1%;
+
+            }
+
+          
+
+            &.branding-card-1 {
+               
+                
+                @include md {
+                    // margin: -2rem 2.5% 1.5rem 1%;
+                }
+
+               @media screen and (min-width: 1025px) {
+                   margin: -2rem 2.5% 0.5rem  1%;
+                  
+               }
+            }
+
+            &.branding-card-2 {
+                @include md {
+                    // margin: -2rem  1% 1.5rem 2.5%;
+                }
+
+                @media screen and (min-width: 1025px) {
+                    margin: -2rem 1% 0.5rem  1%;
+                   
+                }
+            }
+
+            &.branding-card-3 {
+               
+                @include md {
+                    // margin: 1.5rem 2.5% 1.5rem 1%;
+                }
+
+                @media screen and (min-width: 1025px) {
+                    margin: -2rem 1% 0.5rem  2.5%;
+                   
+                }
+            }
+
+            &.branding-card-4 {
+                a {
+                    display: none;
+                    
+                }
+                @include md {
+                    // margin: 1.5rem  1% 1.5rem 2.5%;
+                }
+
+                @media screen and (min-width: 1025px) {
+                    margin: 1rem 2.5% -2rem 1%;
+                   
+                }
+            }
+
+            &.branding-card-5 {
+                a {
+                    display: none;
+                    
+                }
+                @include md {
+                    // margin: 1.5rem 2.5% -2rem 1%;
+                }
+
+                @media screen and (min-width: 1025px) {
+                    margin: 1rem 1% -2rem 1%;
+                   
+                }
+            }
+
+            &.branding-card-6 {
+            
+
+                @include md {
+                    // margin: 1.5rem  1% -2rem 2.5%;
+                }
+
+                @media screen and (min-width: 1025px) {
+                    margin: 1rem 1% -2rem 2.5%;
+                   
+                }
+            }
+
+            a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            .branding-header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 3rem;
+
+                    @include xl {
+                        width: 11%;
+                    }
+                }
+        
+               h3 {
+                font-family: 'AvenirSemiBold', sans-serif;
+                text-transform: uppercase;
+                padding-left: 1rem;
+                margin: 0;
+                text-align: center;
+                // text-transform: uppercase;
+                font-weight: bold;
+
+                @include md {
+                    // font-size: 3vw;
+                }
+
+                @include xl {
+                    // font-size: 1.6vw;
+                    font-size: 1vw;
+                }
+               }
+            }
+    
+            
+    
+           hr {
+            margin: 0.5rem auto;
+            background-color: #73a2a7;
+            border: none;
+            height: 1.5px;
+            width: 90%;
+           }
+    
+           .branding-content {
+                padding: 0 1rem;
+                text-align: center;
+                min-height: 180px;
+
+                @include md {
+                    min-height: auto;
+                }
+                @include xl {
+                    padding: 0 6%;
+                }
+
+                p {
+                    font-family: 'AvenirReg', sans-serif;
+                    margin: 0 0 1.3% 0;
+                   
+                    
+                    @include md {
+                        
+                    }
+                    @include xl {
+                        // font-size: 1.25vw;
+                        font-size: 0.85vw;
+                        margin: 0 0 0.7% 0;
+                    }
+                }
+
+           }
+        }
+
+        
+    }
+
+    .branding-cards-cta-holder {
+        text-align: center;
+        margin-top: 5rem;
+    
+        .branding-cards-cta-btn {
+           background-size: cover;
+            display: inline-block;
+            border: 1px solid #3d6d6f;
+            font-size: 16px;
+            border-radius: 16px;
+            text-transform: uppercase;
+            color: #3d6d6f;
+            background-repeat: no-repeat;
+            padding: 1rem 4rem;
+            background-position: center;
+        }
+    }
+
+    &#ny-branding {
+        hr {
+            background-color: #294858;
+            
+            &:after{
+                background-color: #294858;
+            }
+        }
+
+        @include xl {
+           
+                .branding-cards-holder {
+                   margin: 5.5% auto 1.5%;
+                   
+                }
+
+                .taglinee {
+                    padding: 2% 0 1%;
+               }
+            
+        }
+
+        .tagline-checked-1 {
+            background-color: #294858;
+
+            &:after{
+                background-color: #294858;
+            } 
+        }
+
+        
+    }
+
+    &#atlanta-branding {
+        hr {
+            background-color: $green;
+
+            &:after {
+                background: $green;
+            }
+        }
+
+        @include xl {
+           
+                .branding-cards-holder {
+                   margin: 5.5% auto 1.5%;
+                   
+                }
+
+                .taglinee {
+                    padding: 2% 0 1%;
+               }
+            
+        }
+    }
+
+    &#miami-branding {
+        hr {
+            background-color: $blue;
+        }
+
+        @include xl {
+            
+                .branding-cards-holder {
+                   margin: 5.5% auto 1.5%;
+
+                   
+                }
+
+                .taglinee {
+                    padding: 2% 0 1%;
+               }
+            
+        }
+    }
+
+    &#la-branding {
+        hr {
+            background-color: $blue;
+        }
+
+        @include xl {
+           
+                .branding-cards-holder {
+                   margin: 5.5% auto 1.5%;
+                   
+                }
+
+                .taglinee {
+                    padding: 2% 0 1%;
+               }
+            
+        }
+        
+    }
+}
+
+

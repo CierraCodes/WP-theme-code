@@ -1,0 +1,119 @@
+.service-single-icons {
+    .container-fluid {
+        text-align: center;
+        background-color: rgba(89, 113, 126, 0.7);
+
+        @include xl {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 1.5%;
+            padding: 1%;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 1.8vw;
+            font-family: 'AvenirSemiBold', sans-serif;
+            @include xl {
+                padding: 1% 0;
+                font-size: 1.8vw;
+               text-transform: uppercase;
+            }
+        }
+
+        p {
+            @include xl {
+                font-size: 1vw;
+            }
+        }
+
+       
+
+        .single-service-icon-holder {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .single-service-icon-content {
+            width: 100%;
+            padding: 2%;
+
+
+            @include md {
+                width: 50%;
+                
+            }
+
+            @include lg {
+                width: 25%;
+            }
+
+            @include xl {
+                padding: 1%;
+            }
+
+            .icon-bg {
+                width: 78px;
+                    height: 78px;
+                margin: 0 auto;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                @include md {
+                    width: 78px;
+                    height: 78px;
+                    margin-bottom: 5%;
+                }
+
+                @include xl {
+                    width: 35%;
+                    height: inherit;
+                    background-size: contain;
+                    padding-bottom: 27%;
+
+                }
+            }
+
+            span {
+                color: #fff;
+                font-family: 'AvenirReg', sans-serif;
+                padding-top: 2%;
+                font-size: 14px;
+
+                @include md {
+                    font-size: 20px;
+                }
+
+                @include lg {
+                    font-size: 17px;
+                }
+
+                @include xl {
+                    font-size: 1vw;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+
+    &.less-than-4 {
+        .single-service-icon-content {
+
+            @include xl {
+                width: 33%;
+
+            }
+
+            .icon-bg {
+                img {}
+            }
+
+            span {}
+        }
+    }
+}
+

@@ -1,0 +1,72 @@
+.contact-layout {
+    padding-bottom: 0;
+    height: 100vh;
+        .contact-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            .contact-left {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 30%;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                display: none;
+                color: #fff;
+
+                @include md {
+                    display: flex;
+                }
+
+                h1 {
+                    font-family: 'AvenirSemiBold', sans-serif;
+                    text-transform: uppercase;
+                    margin: 0;
+                    padding-top: 47%;
+                    @include xl {
+                        font-size: 2.6vw;
+                    }
+
+                    span {
+                        font-size: 1.1vw;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    padding-top: 0;
+                    @include xl {
+                        font-size: 1.3vw;
+                        font-family: "CharterRegular", sans-serif;
+                        text-transform: capitalize;
+                        
+                    }
+                   
+                }
+            }
+            
+            .contact-right {
+                width: 85%;
+                margin: 0 auto;
+
+                p {
+                    padding: 1rem 0;
+
+                    @include xl {
+                        padding: 0;
+                    }
+                }
+
+                @include md {
+                    width: 70%;
+                    text-align: center;
+                }
+            }
+        }
+    
+}

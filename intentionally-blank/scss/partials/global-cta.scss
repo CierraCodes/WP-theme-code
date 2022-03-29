@@ -1,0 +1,116 @@
+
+.global-cta-holder {
+    text-align: center;
+    // margin: 2% 0 2% 0;
+
+   
+ 
+    @include xl {
+        // margin: 3% 0 0 0;
+    }
+
+    .taglinee {
+       
+        text-align: center;
+        margin-bottom: 1rem;
+
+        @include xl {
+            font-size: 1vmax;
+            font-family: 'AvenirSemiBold';
+            text-transform: uppercase;
+            padding: 1% 0;
+            margin: 0;
+        }
+    }
+
+    .global-cta-btn {
+       background-size: cover;
+        display: inline-block;
+        border: 1px solid #3d6d6f;
+        font-size: 12px;
+        font-family: 'AvenirSemiBold', sans-serif;
+        text-transform: uppercase;
+        color: #3d6d6f;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        width: 80%;
+        margin: 0 auto;
+
+        @include sm {
+        width: 265px;
+
+        }
+
+        @include md {
+            width: 320px;
+        }
+
+        @include lg {
+            padding: 0.5rem 0;
+        }
+
+        @include xl {
+            display: inline-block;
+            font-size: 0.9vw;
+            width: auto;
+            padding: 0.7% 3%;
+        }
+
+    
+    }
+}
+
+.global-cta-btn {
+    background-size: cover;
+     display: block;
+     border: 1px solid #3d6d6f;
+     font-size: 12px;
+     border-radius: 16px;
+     font-family: 'AvenirSemiBold', sans-serif;
+     text-transform: uppercase;
+     text-align: center;
+     color: #3d6d6f;
+     background-repeat: no-repeat;
+     padding: 0.5rem 1rem;
+     background-position: center;
+     background-image: url("/wp-content/uploads/button-bg.jpg");
+     transition: transform 1s ease;
+     width: 80%;
+     margin: 0 auto;
+
+     &:hover {
+         transform: scale(1.1);
+     
+     }
+
+     @include sm {
+        width: 265px;
+     }
+
+     
+     @include md {
+        width: 320px;
+    }
+
+     @include lg {
+        padding: 0.5rem 0;
+    }
+
+     @include xl {
+     display: inline-block;
+     width: auto;
+
+        font-size: 0.9vw;
+        padding: 0.7% 3%;
+    }
+ 
+ }
+
+ 
+
+
+
+
+ 

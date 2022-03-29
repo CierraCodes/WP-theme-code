@@ -1,0 +1,46 @@
+
+#referral-page-form {
+    
+        .contact-row {
+           
+            .contact-left {
+                
+
+                h1 {
+                   
+                    color: #ffd200;
+                    filter: drop-shadow(2px 3px 8px black);
+                    span {
+                        
+                    }
+                }
+
+                p {
+                   
+                   
+                }
+            }
+            
+            .contact-right {
+               
+                h2 {
+
+                    @include xl {
+                        font-size: 2.5vw;
+                        margin: 0 auto;
+                    }
+                }
+
+                p {
+                  
+
+                    @include xl {
+                        font-size: 0.9vw;
+                        width: 75%;
+                        margin: 2% auto;
+                    }
+                }
+            }
+        }
+    
+}

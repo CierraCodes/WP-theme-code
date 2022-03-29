@@ -1,0 +1,218 @@
+
+*, ::after, ::before{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+} 
+:root{
+	font-size: 14px;
+}
+html, body{
+	position: relative;
+	margin: 0;
+	font-family: 'SigniaProBold', sans-serif!important;
+	padding: 0;
+	width: 100%;
+	font-size: 16px;
+	scroll-behavior:smooth;
+	line-height: 1.5em;
+	overflow-x: hidden;
+	background-color: transparent;
+/* 	-webkit-overflow-scrolling: touch; */
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+body{
+	-webkit-overflow-scrolling: touch;
+}
+main{
+	-webkit-overflow-scrolling: touch;
+}
+img{
+	// width: 100%;
+	// height: auto;   
+	max-width: 100%;
+    height: auto;
+}
+
+ul, li{
+	list-style: none;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	/* This is better for small screens, once min() is better supported */
+	/* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+	gap: 1rem;
+  }
+
+section {
+	
+
+		margin-bottom: 5.5rem;
+
+		&:last-of-type {
+			margin-bottom: 0;
+			padding-bottom: 2rem;
+		}
+
+		@include md {
+			margin-bottom: 5rem;
+		}
+	
+
+	@include xl {
+		margin: 0;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	/* Orientation : Portrait */  
+@media only screen   
+	and (orientation : landscape)   
+	and (-webkit-min-device-pixel-ratio: 1)   
+	and (min-device-height : 1023px)   
+	and (max-device-height : 1024px)  
+	{ height: 75vh;}  
+
+	.container-fluid {
+		width: 100%;
+		@include xl {
+			// margin: 4% auto;
+			padding: 0;
+			margin: 0!important;
+		}
+	}
+
+	// &:first-of-type {
+	// 	margin-bottom: 0;
+	// }
+
+	// &:last-of-type {
+	// 	margin-bottom: 0;
+	// 	padding-bottom: 2rem;
+	// 	@include xl {
+	// 		padding-bottom: 3%;
+	// 	}
+	// }
+}
+
+#New-York {
+	margin-bottom: 0;
+}
+
+.main-bg {
+	background-image: url('/wp-content/uploads/Background.jpg');
+	background-size: cover;
+	background-position: top;
+    background-repeat: no-repeat;
+
+	@include xl {
+		background-size: 100%;
+	}
+
+}
+
+
+#main-content {
+
+	// background-image: url('../../intentionally-blank/fonts/Background.png');background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+	@include xl {
+		// margin-top: -120.5px;
+	}
+
+	// max-width: 1920px;
+	// margin-left: auto;
+	// margin-right: auto;
+}
+
+
+.home #main-content {
+	margin-top: 0;
+}
+
+.scroll-icon-holder {
+	color: #fff;
+	position: absolute;
+	bottom: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	visibility: hidden;
+		
+	a {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	@include xl {
+		color: #fff;
+		position: absolute;
+		visibility: visible;
+		bottom: 3.5%;
+		left: 50%;
+		transform: translateX(-50%);
+		animation: MoveUpDown 1s linear 3s infinite;
+		
+		a {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+	}
+}
+
+
+.container-fluid {
+	padding: 2rem 1rem;
+	position: relative;
+
+	@include xl {
+		padding: 2rem;	
+	}
+}
+
+.hero {
+	.container-fluid {
+		// background: linear-gradient(to bottom, rgba(68, 80, 100, 0.8) 0%, rgba(68, 80, 100, 0) 30%);
+	}
+}
+
+.lg-bnr-city {
+	&.blue {
+         background-color: transparent;
+
+    }
+    &.blue.hide {
+        // background-color: #8898b1;
+        background-color: #445064;
+
+
+    }
+}
+
+.hero-with-text {
+	
+}
+
+

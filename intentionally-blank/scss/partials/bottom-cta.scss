@@ -1,0 +1,52 @@
+// .story-page-like {
+//     &.like-what-you-see {
+//         display: none;
+
+//         @include xl {
+//             display: block;
+//         }
+//         background-color: rgba(242, 247, 251, 0.8);
+//         @include xl {
+//             padding: 1% 0;
+//         }
+
+//         .container-fluid {
+//             width: 95%;
+//             display: flex;
+//             margin: 0 auto;
+//             align-items: center;
+//             @include xl {
+//                 width: 85%;
+//                 margin: 0 auto;
+//                 padding: 1%;
+//             }
+//         }
+
+//         .like-what-you-see-left {
+//             text-align: left;
+
+//             @include xl {
+//                 flex: 1;
+//             }
+//             h1 {
+//                 text-transform: capitalize;
+//                 padding: 0;
+//                 margin: 0;
+//                 color: #294859;
+//                 font-family: 'AvenirReg', sans-serif;
+//                 @include xl {
+//                     font-size: 2.2vw;
+                    
+//                     display: inline-block;
+//                 }
+//             }
+//         }
+
+//         .like-what-you-see-right {
+//             text-align: right;
+//             a {
+
+//             }
+//         }
+//     }
+// }

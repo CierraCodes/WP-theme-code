@@ -1,0 +1,851 @@
+.single-casestudy.postid-956 {
+
+    .cs-content {
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+
+        img {
+
+            @include sm {
+
+                padding: 3%;
+            }
+
+            @include xxl {
+                width: auto;
+                padding: 0;
+            }
+        }
+
+
+    }
+}
+
+.casestudy-template-default .cs-single-page-hero {
+    padding: 0;
+    position: relative;
+    background-blend-mode: multiply;
+    height: 500px;
+    
+    &:before {
+        content: ' ';
+        position: absolute;
+        background: linear-gradient(to bottom, rgba(68, 80, 100, 0.8) 0%, rgba(68, 80, 100, 0) 75%);
+        background-blend-mode: multiply;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    @include md {
+        height: 655px;
+    }
+
+    @include xl {
+        height: 100vh;
+    }
+}
+
+
+.case-video {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+
+    @include md {
+        height: 655px;
+    }
+
+    @include xl {
+        height: 100vh;
+    }
+
+
+
+}
+
+.single-case-study {
+    padding-top: 2rem;
+    margin-top: -1%;
+
+    @include xl {
+        padding-top: 0;
+    }
+
+    h1 {
+        font-family: 'AvenirSemiBold', sans-serif;
+        font-size: 1.5rem;
+
+        @include xl {
+            font-size: 1.8vmax !important;
+        }
+    }
+
+    p {
+        font-family: 'CharterRegular', sans-serif;
+
+        @include xl {
+            margin: 0;
+            font-size: 1vmax;
+        }
+    }
+
+    li {
+        font-family: 'CharterRegular', sans-serif;
+
+        list-style: disc;
+
+        @include xl {
+            margin: 0;
+            font-size: 1vmax;
+        }
+    }
+
+    .cs-content {
+        text-align: left;
+        padding: 0 2%;
+
+        @include xl {
+            padding: 4% 4%;
+        }
+
+
+        ul li {
+            list-style-type: disc;
+            font-family: 'CharterRegular';
+        }
+
+        h1 {
+            font-family: 'AvenirSemiBold', sans-serif;
+            text-transform: uppercase;
+
+
+            @include xl {
+                margin-bottom: 5%;
+            }
+        }
+
+
+    }
+
+    .case-info-start {
+        padding-bottom: 2rem;
+
+        @include xl {
+            padding: 5% 0 2% 0;
+        }
+
+        .container-fluid {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0;
+
+            @include xl {
+                width: 65%;
+               
+             
+            }
+        }
+
+
+
+
+
+        h5 {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+
+            @include xl {
+                font-family: 'CharterRegular', sans-serif;
+                font-size: 1vmax;
+                padding-top: 3%;
+                margin: 0;
+            }
+        }
+
+
+        .case-info-top {
+            display: flex;
+            flex-direction: column;
+
+            @include md {
+                flex-direction: row;
+            }
+
+            @include xl {
+                padding-bottom: 1%;
+            }
+
+            .case-info-top-left {
+                @include md {
+                    width: 50%;
+                }
+
+                h1 {
+                    font-family: 'AvenirSemiBold', sans-serif;
+                    text-transform: uppercase;
+
+
+                    @include xl {
+                        font-size: 1.8vw !important;
+                    }
+                }
+
+                h2 {
+                    @include xl {
+                        margin: 4% 0 0 0;
+                    }
+                }
+
+                p {}
+            }
+
+
+
+
+            .case-info-top-right {
+                
+
+                @include md {}
+
+                p {
+                    line-height: 1.5;
+                    font-size: 0.9rem;
+
+                    @include xl {
+                        font-size: 1vmax;
+                    }
+                }
+
+                @include xl {
+                    width: 50%;
+                    padding-right: 8%;
+                    margin-bottom: 0.8rem;
+                }
+            }
+
+
+        }
+
+        .case-info-bottom {
+            display: flex;
+            flex-direction: row;
+
+            .case-info-bottom-left {
+                width: 30%;
+
+                @include md {
+                    width: 50%;
+                }
+
+                h1 {
+                    font-family: 'AvenirSemiBold', sans-serif;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+
+                    @include xl {
+                        font-size: 1.8vw !important;
+                    }
+                }
+            }
+
+            .case-info-bottom-right {
+                display: flex;
+                width: 70%;
+
+                @include xl {
+                    width: 50%;
+                }
+
+                p {
+                    @include xl {
+                        margin: 0;
+                        line-height: 1.5;
+                    }
+                }
+
+                h1 {
+                    font-size: 1rem;
+                    padding-bottom: 0.4rem;
+
+                    @include xl {
+                        margin-bottom: 0;
+                        padding-bottom: 0.4rem;
+                        font-family: 'AvenirSemiBold', sans-serif;
+                        text-transform: uppercase;
+                        font-size: 1.3vmax !important;
+                    }
+                }
+
+                .case-info-bottom-right-one {
+                    flex: 1;
+
+                    @include md {
+                        flex: unset;
+                    } 
+
+                    p:first-of-type {
+                        @include xl {
+                            // margin-bottom: 20%;
+                        }
+                    }
+
+                    @include xl {
+                        width: 50%;
+                    }
+
+                    h1:last-of-type {
+                        padding-top: 0.8rem;
+                        @include xl {
+                            padding-top: 10%;
+                        }
+                    }
+                }
+            }
+        }
+
+        hr {
+            background-color: #294859;
+            height: 10px;
+            border: 0px;
+            border-radius: 15px;
+            margin: 1rem 0;
+            
+            @include xl {
+                margin: 3% 0;
+            }
+        }
+    }
+
+    .case-info-middle {
+        width: 85%;
+        margin: 0 auto;
+
+
+
+        @include xl {
+            width: 100%;
+            padding-top: 4%;
+        }
+
+        .container-fluid {
+            @include xl {
+                width: 65%;
+                padding: 0 0 2% 0;
+            }
+
+            margin: 0 auto;
+            background: #d1d7db;
+            border-radius: 10px;
+            box-shadow: 0 3px 25px rgba(0, 0, 0, 0.35);
+
+        }
+
+        .cs-img-holder {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @include xl {
+                height: 65vh;
+            }
+        }
+
+
+
+        .cs-logo-holder {
+            text-align: center;
+            display: flex;
+            height: 25vh;
+            position: relative;
+
+            @include xl {
+                height: 34vh;
+                padding: 4%;
+            }
+
+            .cs-first-img {
+                width: 50%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 0 auto;
+
+
+                &.second-logo-there {
+                    @include md {
+                        width: 30%;
+                        background-size: unset;
+                    }
+
+                    @include xl {
+                        background-size: contain;
+                    }
+                }
+
+
+            }
+
+
+            hr {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 50%;
+                width: 0.5%;
+                border-radius: 15px;
+                background: #294859;
+            }
+
+            .cs-second-img {
+                @include md {
+                    width: 30%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin: 0 auto;
+                }
+
+
+            }
+        }
+
+        .cs-icon-holder {
+
+            .cs-icons {
+                display: none;
+                justify-content: center;
+
+                @include xl {
+                    display: flex;
+                    //    height: 25vh;
+                    justify-content: space-around;
+                }
+
+                @include md {
+                    margin-top: -79.5px;
+                }
+
+                @include lg {
+                    margin-top: -94.83px;
+
+                }
+
+                @include xl {
+
+                    margin-top: -5%;
+                    padding-bottom: 2%;
+                }
+
+
+
+                .cs-icon {
+                    margin: 3%;
+                    text-align: center;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    transform: scale(1);
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+                    img {
+                        width: 3rem;
+
+                        @include sm {
+                            width: 40px;
+                        }
+
+                        @include md {
+                            width: 40px;
+                            position: absolute;
+                            height: 40px;
+                            top: 25%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+
+                        @include xl {
+                            height: auto;
+                            width: 35%;
+                        }
+                    }
+
+                    a {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                    }
+
+                    p {
+                        @include md {
+                            position: absolute;
+                            bottom: 17%;
+                            margin: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            font-size: 14px;
+                        }
+
+                        @include xl {
+                            font-size: 0.7vw;
+                            font-family: 'AvenirSemiBold', sans-serif;
+                        }
+                    }
+
+                    @include md {
+                        text-align: center;
+                        background: #fff;
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        text-align: center;
+                        position: relative;
+                        padding: 0;
+                    }
+
+                    @include xl {
+                        width: 6vmax;
+                        margin: 0;
+                        height: 6vmax;
+                    }
+                }
+            }
+
+            .cs-content-one {
+                @include md {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .img-left-1 {
+
+                    @include md {
+                        width: 50%;
+
+                    }
+
+                    @include xl {
+                        padding: 0% 2%;
+                    }
+                }
+
+                .txt-right-1 {
+
+                    @include md {
+                        width: 50%;
+                        padding: 0 2%;
+
+                    }
+
+                    h1 {
+
+
+                        @include xl {}
+                    }
+                }
+            }
+
+            .cs-content-two {
+                @include md {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .img-left-2 {
+
+                    @include md {
+                        width: 50%;
+                    }
+
+                    @include xl {
+                        padding: 0% 2%
+                    }
+                }
+
+                .txt-right-2 {
+
+                    @include md {
+                        width: 50%;
+                        padding: 0 2%;
+
+                    }
+
+                    h1 {
+
+                        @include xl {}
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+    .case-info-end {
+        margin-top: 2rem;
+
+        @include xl {
+            margin: 4.5% 0 0 0;
+            padding-bottom: 0;
+        }
+
+        .banner-img-holder {
+            height: 35vh;
+            background-size: cover;
+
+            @include xl {
+                height: 50vh;
+            }
+        }
+
+        .container-fluid {
+            padding: 0;
+            width: 85%;
+            margin: 0 auto;
+            @include xl {
+                padding: 0;
+            width: 65%;
+            margin: 0 auto;
+            }
+
+        }
+
+        .cs-content-three {
+            border-left: 3px solid #294859;
+            border-right: 3px solid #294859;
+            text-align: center;
+            padding: 2rem 0;
+
+            @include xll {
+                border-bottom: 3px solid #294859;
+            }
+
+            @include xl {
+                padding: 5% 11% 5% 11%;
+            }
+
+            h1 {
+
+                @include xl {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            p {
+                padding: 0.5rem 0;
+
+                @include xl {
+                    margin: 3% 0;
+                }
+            }
+
+        }
+
+        .cs-stats {
+
+            border-left: 3px solid #294859;
+            border-right: 3px solid #294859;
+            display: none;
+            flex-wrap: wrap;
+            padding: 6% 0;
+            background: #294859;
+            color: #fff;
+
+
+
+            @include xl {
+                padding: 3% 0;
+                display: flex;
+            }
+
+            .stat {
+                text-align: center;
+                width: 50%;
+                margin: 4% 0;
+
+                @include md {
+                    margin: 2% 0;
+                }
+
+                @media screen and (min-width: 1280px) {
+                    width: 25%;
+                    margin: 0;
+                }
+            }
+
+            h2 {
+                margin: 0;
+                font-family: 'AvenirSemiBold', sans-serif;
+
+                @include xl {
+                    font-size: 2.3vw;
+                }
+            }
+
+            p {
+                font-family: 'CharterRegular', sans-serif;
+
+                @include xl {
+                    font-size: 1vw;
+                    padding: 0 10%;
+                }
+            }
+        }
+
+        .cs-content-four {
+            padding: 2rem 0;
+
+            @include md {
+                display: flex;
+                align-items: center;
+            }
+
+            @include xl {
+                padding: 5% 4%;
+                width: 100%;
+
+            }
+
+            .img-left-3 {
+                margin: 2rem 0 1rem;
+
+                @include md {
+                    width: 50%;
+                    margin: 0;
+                    padding: 0 2%;
+                }
+
+                @include xl {}
+            }
+
+            .txt-right-3 {
+
+                @include md {
+                    width: 50%;
+                    padding: 0 4% 0 2%;
+                }
+
+                @include xl {}
+
+
+            }
+        }
+    }
+}
+
+.related-posts {
+    padding: 0 !important;
+    background: #2C2E3A;
+
+    .container-fluid {
+        width: 85%;
+        margin: 0 auto;
+        padding: 2rem 0;
+
+        @include md {
+        padding: 2rem 0rem 3rem;
+            
+        }
+
+        @include xl {
+            padding: 2% 0 5% 0;
+            width: 70%;
+
+        }
+    }
+
+    h2 {
+        margin: 0;
+        color: #fff;
+        font-family: 'AvenirSemiBold', sans-serif;
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+
+        @include md {
+            padding-bottom: 0.5rem;
+
+        }
+
+        @include xl {
+            font-size: 1.8vmax;
+            padding: 0% 0 2% 0;
+        }
+    }
+
+    a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    p {
+        position: absolute;
+        color: #fff;
+        bottom: -20%;
+        font-family: 'CharterRegular', sans-serif;
+        font-size: 14px;
+        padding-bottom: 1rem;
+
+        @include xl {
+            font-size: 1.2vmax;
+            padding: 0;
+            margin: 0;
+            bottom: -30px;
+        }
+    }
+
+    .related-holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include xl {}
+
+        .related-post {
+            position: relative;
+            width: 100%;
+            margin: 0 0 18% 0;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+
+            @include md {
+                width: 49%;
+                margin: 0;
+                padding-bottom: 25%;
+                height: auto;
+            }
+
+            @include xl {
+                width: 48%;
+                padding-bottom: 25%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

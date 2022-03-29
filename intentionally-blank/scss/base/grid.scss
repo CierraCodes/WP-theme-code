@@ -1,0 +1,113 @@
+
+// format: .grid > .row > .col.S6.M4.L3
+//
+// -----------------------------------------------------------------------------
+
+ 
+.grid { margin: 0 -1.5625%; width: 103.125%; overflow: hidden; }  // To be used inside container
+.grid:before, .grid:after, .row:before, .row:after { content: " "; display: table; clear: both;}
+.grid .row { margin: 0; display: flex; transform: translatex(0.78125%); flex-wrap: wrap; }
+.col { position: relative; margin: .5vh 0.78125%; display: inline-block; float: left; padding: 0px 0px; box-sizing: border-box; overflow: visible;
+ 
+    @include md { margin: .75vh 0.78125%; }
+    @include lg { margin: 1vh 0.78125%; }
+    
+    &.center { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
+}
+
+.row { 
+    
+    &.spacer { display: none; 
+
+        @include sm { display: block; padding: spacing("quarter") 0; } 
+        @include md { display: block; padding: (spacing("single") + spacing("half")) 0; } 
+    } 
+    
+    &.tight {
+        
+        .col {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+    }
+}
+
+// Nested rows 
+  
+.row .row { margin: 0 -1.5625%; }
+.grid > .row > .col:nth-child(1) > .row { margin-right: -3.125%; }
+.row .row .col { margin: 0 0.78125%; }
+.row .row .col:first-child { padding-left: 0; }
+.row .row .col:last-child { padding-right: 0; }
+
+
+//  Standard 12-columns
+
+.row {
+    
+    .S1  { width: 6.640625%; }
+    .S2  { width: 14.84375%; }
+    .S3  { width: 23.046875%; }
+    .S4  { width: 31.25%; }
+    .S5  { width: 39.453125%; }
+    .S6  { width: 47.65625%; }
+    .S7  { width: 55.859375%; }
+    .S8  { width: 64.0625%; }
+    .S9  { width: 72.265625%; }
+    .S10 { width: 80.46875%; }
+    .S11 { width: 88.671875%; }
+    .S12 { width: 96.875%; }
+    .S-hide, .M-hide, .L-hide  { display: none; }
+
+    @include sm {
+        
+        .M1  { width: 6.640625%; }
+        .M2  { width: 14.84375%; }
+        .M3  { width: 23.046875%; }
+        .M4  { width: 31.25%; }
+        .M5  { width: 39.453125%; }
+        .M6  { width: 47.65625%; }
+        .M7  { width: 55.859375%; }
+        .M8  { width: 64.0625%; }
+        .M9  { width: 72.265625%; }
+        .M10 { width: 80.46875%; }
+        .M11 { width: 88.671875%; }
+        .M12 { width: 96.875%; }
+        .S-hide { display: inherit; }
+    }
+    
+    @include md {
+        
+        .L1  { width: 6.640625%; }
+        .L2  { width: 14.84375%; }
+        .L3  { width: 23.046875%; }
+        .L4  { width: 31.25%; }
+        .L5  { width: 39.453125%; }
+        .L6  { width: 47.65625%; }
+        .L7  { width: 55.859375%; }
+        .L8  { width: 64.0625%; }
+        .L9  { width: 72.265625%; }
+        .L10 { width: 80.46875%; }
+        .L11 { width: 88.671875%; }
+        .L12 { width: 96.875%; } 
+        .M-hide { display: inherit; }
+    }
+    
+    @include lg {
+    
+    .XL1  { width: 6.640625%; }
+    .XL2  { width: 14.84375%; }
+    .XL3  { width: 23.046875%; }
+    .XL4  { width: 31.25%; }
+    .XL5  { width: 39.453125%; }
+    .XL6  { width: 47.65625%; }
+    .XL7  { width: 55.859375%; }
+    .XL8  { width: 64.0625%; }
+    .XL9  { width: 72.265625%; }
+    .XL10 { width: 80.46875%; }
+    .XL11 { width: 88.671875%; }
+    .XL12 { width: 96.875%; } 
+    .L-hide { display: inherit; }
+    }
+}

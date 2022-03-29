@@ -1,0 +1,159 @@
+.heading-for-section {
+
+    @include md {
+        margin-bottom: 4%;
+    }
+
+    @include xl {
+     
+    }
+
+}
+
+.heading-for-section .container-fluid{
+    padding: 0;
+
+   @include xl {
+       padding: 3% 0 0 0;
+   }
+}
+
+
+.branding-cards-txt-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+
+    @include md {
+        // margin-bottom: 4%;
+        padding: 0;
+    }
+
+    &.left-title {
+       
+    }
+
+    &.center-title {
+        .hr-holder {
+            display: none;
+        }
+
+        .sub-text-holder {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+
+            p {
+                position: relative;
+            }
+        }
+    }
+
+    
+    .hr-holder {
+        display: none;
+        
+        hr {
+            position: relative;
+            height: 2px;
+            background: #294858;
+            border: 0px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                height: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 10px;
+                background: #294858;
+                right: -10px;
+            }
+        }
+
+        @include md {
+            width: 15%;
+            display: block;
+        }
+
+    }
+    
+
+    .sub-text-holder {
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+
+        @include md {
+            width: 83%;
+            margin-left: 2%;
+            text-align: unset;
+        }
+
+        @include xl {
+           
+        }
+
+        h1 {     
+            font-family: 'AvenirSemiBold', sans-serif;
+            font-size: 2.5rem;
+
+            @include md {
+                font-size: 3rem;
+            }
+    
+            @include xl {
+                text-transform: uppercase;
+                font-size: 2.2vw;
+                line-height: 1;
+            }
+        }
+        
+        p {
+            margin: 0;
+            font-family: 'AvenirReg', sans-serif;
+            
+            @include md {
+                position: absolute;
+                font-size: 1.3rem;
+            }
+        
+            @include xl {
+                font-size: 1.25vw; 
+                padding-top: 0.5%;
+                text-transform: uppercase;
+                
+            }
+        }
+
+      
+    
+       
+    }
+
+    
+}
+
+
+
+
+#ny-test-title {
+    // margin-bottom: 0;
+    background-color: $drk-green;
+    color: #fff;
+    padding-top: 4%;
+
+    @include md {
+        padding-top: 0;
+        background-color: transparent;
+        // margin-bottom: 5rem;
+        color: #000
+    }
+
+    @include xl {
+        // margin-bottom: 3%;
+    }
+}
+
+

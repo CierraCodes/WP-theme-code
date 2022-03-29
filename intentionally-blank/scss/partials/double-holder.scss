@@ -1,0 +1,194 @@
+.double-content-holder {
+    .container-fluid {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @include xl {
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+
+    hr {
+        display: none;
+    }
+
+    .content-left {
+        width: 100%;
+        padding: 1%;
+        text-align: center;
+
+        @include lg {
+            width: 50%;
+            padding: 2%;
+        }
+
+        @include xl {
+            text-align: left;
+        }
+    }
+
+    .content-right {
+        width: 100%;
+        padding: 1%;
+        text-align: center;
+
+        @include lg {
+            width: 50%;
+            padding: 2%;
+        }
+
+        @include xl {
+            text-align: left;
+        }
+    }
+
+    h1 {
+        font-family: 'AvenirSemiBold', sans-serif;
+
+        @include lg {
+            font-size: 5vw;
+        }
+
+        @include xl {
+            font-size: 3.5vw;
+           
+        }
+    }
+
+    h2 {
+        font-family: 'AvenirSemiBold', sans-serif;
+        text-transform: uppercase;
+
+        @include lg {
+            font-size: 3vw;
+        }
+
+
+        @include xl {
+            font-size: 2.1vw;
+            // margin-bottom: 7%;
+        }
+    }
+
+    p {
+        font-family: 'CharterRegular', sans-serif;
+
+        @include xl {
+            font-size: 1vw;
+        }
+    }
+}
+
+#digital-content-2 .content-left p {
+ @include xl {
+     padding-right: 3%;
+ }
+}
+
+#social-media-content-1,
+#digital-content-1,
+#web-dev-content-1,
+#brand-content-1 {
+
+    .content-left {
+        @include xl {
+            width: 40%;
+        }
+    }
+
+    .content-right {
+        @include xl {
+            width: 60%;
+        }
+    }
+
+    @include xl {
+        margin: 0;
+    }
+
+  
+}
+
+#social-media-content-2,
+#digital-content-2,
+#web-dev-content-2,
+#brand-content-2 {
+    .container-fluid {
+        flex-direction: column-reverse;
+
+        @include lg {
+            flex-direction: row;
+        }
+    }
+
+    .content-left {
+        @include xl {
+            width: 60%;
+        }
+    }
+
+    .content-right {
+        @include xl {
+            width: 40%;
+        }
+    }
+    
+}
+
+#social-media-content-1,
+#social-media-content-2 {
+    img {
+        max-height: 400px;
+        width: auto;
+        margin: 0 auto;
+
+        @include xl {
+            max-height: unset;
+            width: 100%;
+        }
+    }
+}
+
+#digital-content-1,
+#digital-content-2 {
+    img {
+        max-height: 400px;
+        width: auto;
+        margin: 0 auto;
+
+        @include xl {
+            max-height: unset;
+            width: 100%;
+        }
+    }
+}
+
+#web-dev-content-1,
+#web-dev-content-2 {
+    img {
+        max-height: 400px;
+        width: auto;
+        margin: 0 auto;
+
+        @include xl {
+            max-height: unset;
+            width: 100%;
+        }
+    }
+}
+
+#brand-content-1,
+#brand-content-2 {
+    img {
+        max-height: 400px;
+        width: auto;
+        margin: 0 auto;
+
+        @include xl {
+            max-height: unset;
+            width: 100%;
+        }
+    }
+}

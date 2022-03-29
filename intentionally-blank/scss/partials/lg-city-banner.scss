@@ -1,0 +1,489 @@
+.lg-bnr-city {
+    padding: 0 !important;
+    height: 500px;
+    transition: all 0.5s ease;
+
+    @include md {
+        height: 655px;
+    }
+
+    @include xl {
+        height: 100vh;
+    }
+
+//global styles for section
+    .container-fluid {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0;
+
+        &.animated {
+            .city-hero-title-holder {
+                &:before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .social-hero-wrapper { //done mobile      done desktop
+            // display: none;
+            position: relative;
+            left: 0;
+            top: 4rem;
+            width: 25px;
+
+            
+
+            @include xl {
+                position: absolute;
+                display: inline-block;
+                // left: 15px;
+                left: 1%;
+                top: 150px;
+                width: 1.5%;
+            }
+
+            .social-hero-holder{
+                display: flex;
+                flex-direction: column;
+
+                a {
+    
+
+                    img {
+
+                        
+                            // width: auto;
+                            // height: 30px;
+                            margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .device-holder { //done fully
+            position: absolute;
+            bottom: 1rem;
+            width: 75%;
+            right: 1rem;
+            transition: all 0.5s ease;
+            height: 75%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            opacity: 0;
+
+            @include md {
+                left: 34%;
+                right: 1rem;
+                width: auto;
+            }
+
+            @include lg {
+                background-position: left bottom;
+            }
+
+            @include xl {
+                left: 30%;
+                transform: translateX(-50%);
+                flex-direction: column;
+                justify-content: end;
+                display: flex;
+                bottom: 0;
+                right: 0;
+                // left: 22%;
+                width: 30%;
+                background-position: center;
+            }
+         
+            &.hide {
+                opacity: 1;
+            }
+
+        
+
+        }
+
+        .left-menu {   //DONE mobile DONE desktop
+            // display: none;
+            position: absolute;
+            top: 50%;
+            align-items: center;
+            transform: translateY(-50%);
+            display: flex;
+
+            &.open {
+                z-index: 9999;
+            }
+           
+            @include xl {
+                // display: flex;
+                // left: 15px;
+                width: 15%;
+                left: 1%;
+            }
+
+            .left-menu-icon {
+                display: inline-block;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                img {
+                   
+                }
+
+                @include xl {
+                    width: 15%; 
+                }
+            }
+            .left-menu-content {    
+                
+                transition: all 0.5s ease;
+                opacity: 0;
+                visibility: hidden;
+                margin: 2rem;
+                padding: 1rem 2rem;
+                background: rgba(0,0,0,0.8);
+                border-radius: 10px;
+
+                @include xl {
+                    margin: 0;
+                    background: transparent;
+                    padding: 2rem;
+
+                }
+
+                &.open {
+                   opacity: 1;
+                   visibility: visible;
+                  
+
+                }
+                li {
+                    padding: 0.2rem 0;
+                    font-family: 'AvernirSemiBold', sans-serif;
+                    text-transform: uppercase;
+
+                    @include xl {
+                        padding: 0.5rem 0;
+                    }
+                   
+                    a {
+                        font-size: 1rem;
+                        color: $white;
+
+                        @include xl {
+                            font-size: 1.1vw;
+                            display: block;
+                            line-height: 1;
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        .scroll-icon-holder { //DONE mobile DONE desktop
+            color: #fff;
+        }
+
+        .city-hero-title-holder {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 4rem;
+
+            &.hide {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+                transition-delay: 0s;
+            }
+
+            @include md {
+                left: 5rem;
+            }
+
+
+
+            @include xl {
+                // position: absolute;
+                top: 50%;
+                left: 6%;
+                bottom: auto;
+                transform: translateY(-50%);
+            }
+
+            &:before {
+                content: '';
+                width: 3px;
+                height: 65%;
+                position: absolute;
+                left: 0;
+                margin-right: 1%;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #ffd200;
+                border-radius: 25px;
+                transition: opacity 2s ease;
+                opacity: 0;
+                @include xl {
+                    width: 10px;
+                }
+            }
+           
+
+            h1 {
+                color: #fff;
+                padding-left: 1rem;
+
+                @include md {
+                    font-size: 4rem;
+                    padding-left: 4%;
+                }
+
+                @include xl {
+                    font-size: 4vw;
+                    // padding-left: 4%;
+                }
+
+                
+            }
+        }
+
+        .city-with-icons-holder {
+            position: absolute;
+            bottom: 0;
+            width: 25px;
+            opacity: 0;
+            transition: all 0.5s ease;
+            bottom: 0.5rem;
+
+            @include xl {
+                display: inline-block;
+                left: 1%;
+                // position: absolute;
+                bottom: 100px;
+                width: 1.6%;
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
+            
+           
+
+            &.show {
+                opacity: 1;
+                z-index: 9999;
+            }
+
+            .city-with-icon {
+                position: relative;
+                margin-bottom: 0.6em;
+
+                &:before {
+                    font-size: 1.5rem;
+    
+    
+                    @include xl {
+                        font-size: 1.2vw;
+                    }
+                }
+
+                a {
+                    display: block;
+                    top: 0;
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    z-index: 1;
+                    height: 100%;
+                }
+
+                img {
+                    position: relative;
+                    
+                  
+                }
+            }
+        }
+
+
+    }
+}
+
+  
+//New York Page specifically 
+&#New-York {
+    background-position: 68%;
+
+    @include lg {
+        background-position: top right;
+    }
+
+    .city-hero-title-holder {
+        h1 {
+            font-size: 1.9rem;
+
+            @include md {
+                font-size: 3.5rem;
+            }
+
+            @include xl {
+                font-size: 4vw;
+                width: 60%;
+            }
+        }
+    }
+
+    .city-with-icons-holder {
+        
+        
+        .New-York {
+            
+            img {
+             
+            }
+
+            &:before {
+                content: "•";
+                color: #af978d;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                   left: -43%;
+            }
+        }
+    }
+
+    .device-holder {
+
+        
+           
+        
+        @include xl {
+            left: 34%;
+        }
+    }
+}
+//Miami Page specifically 
+&#Miami {
+
+    .city-hero-title-holder.fade_in_left.hide {
+
+    }
+
+    .animated {
+        .city-hero-title-holder.fade_in_left {
+            
+        }
+    }
+
+    .device-holder {
+        @include xl {
+            width: 45%;
+            height: 66%;
+            left: 40%;
+        }
+      
+
+        
+    } 
+
+    .city-with-icons-holder {
+        border-radius: 5px;
+
+        .Miami {
+            &:before {
+                content: "•";
+                color: #af978d;
+                position: absolute;
+                top: 45%;
+               
+                transform: translateY(-50%);
+                   left: -43%;
+            }
+            
+        }
+    }
+}
+//Atlanta Page specifically 
+&#Atlanta {
+    .device-holder {
+        @include xl {
+            left: 30%;
+            width: 33%;
+
+        }
+
+
+    }
+
+    .city-hero-title-holder {
+        h1 {
+            font-size: 2rem;
+
+            @include md {
+                font-size: 3.5rem;
+            }
+
+            @include xl {
+                font-size: 4vw;
+                width: 80%;
+            }
+        }
+    }
+
+    .city-with-icons-holder {
+        border-radius: 5px;
+
+        .Atlanta {
+            &:before {
+                content: "•";
+                color: #af978d;
+                position: absolute;
+                top: 50%;
+               
+                transform: translateY(-50%);
+                   left: -43%;
+            }
+            
+        }
+    }
+}
+//LA Page specifically 
+&#Los-Angeles {
+
+    background-position: top;
+   
+    .city-hero-title-holder {
+        h1 {
+            font-size: 2.4rem;
+
+            @include md {
+                font-size: 3.5rem;
+            }
+
+            @include xl {
+                font-size: 4vw;
+                width: 45%;
+            }
+        }
+    }
+    
+    .city-with-icons-holder {
+        border-radius: 5px;
+        .Los-Angeles {
+            &:before {
+                content: "•";
+                color: #af978d;
+                position: absolute;
+                top: 40%;
+                
+                transform: translateY(-50%);
+                   left: -43%;
+            }
+        }
+    }
+}

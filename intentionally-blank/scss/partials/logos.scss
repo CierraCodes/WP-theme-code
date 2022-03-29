@@ -1,0 +1,123 @@
+.logo-section-holder {
+
+    .container-fluid {
+        padding: 0;
+        width: 85%;
+        margin: 0 auto;
+
+        @include md {
+            width: 100%;
+            padding: 0;
+        }
+
+        @include xl {
+            // width: 100%;
+            // padding: 0;
+            margin: 4% auto 3%;
+        }
+    }
+
+    .logos-holder {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1080px;
+        margin: 0 auto;
+        justify-content: center;
+
+        @include md {
+            padding: 1rem 3rem 0;
+            margin: 1rem 0 0 0;
+        }
+
+        @include lg {
+            max-width: 65%;
+            padding: 0;
+            // margin: 3% auto 2%;
+            margin: 5% auto 2%;
+        }
+
+        .logo-image {
+            width: 50%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @include md {
+                padding: 5% 8%;
+                width: 33%;
+            }
+
+            @include xl {
+                padding: 2% 5%;
+            }
+            img {
+                filter: grayscale(1);   
+                transition: all 0.5s ease-in-out;
+                opacity: 0.6;
+                &:hover {
+                    opacity: 1;
+                    filter: grayscale(0);
+                }
+            }
+            &.logo-image-0 {
+                
+                @include xl {
+                    padding: 2% 5%;
+                }
+            }
+            &.logo-image-1 {
+              
+                @include xl {
+                    padding: 2% 5%;
+                }
+            }
+            &.logo-image-2 {
+                
+                @include xl {
+                    padding: 2% 5%;
+                }
+            }
+            &.logo-image-3 {
+                padding: 3% 12%;
+                @include md {
+                    padding: 1% 8%;
+                }
+            }
+            &.logo-image-4 {
+                padding: 3% 17%;
+                @include md {
+                    padding: 1% 8%;
+                }
+            }
+            &.logo-image-5 {
+                padding: 3% 14%;
+                @include md {
+                    padding: 1% 8%;
+                }
+            }
+
+
+            @include md {
+                &.logo-image-3 {
+                    width: 30%;
+                }
+                &.logo-image-4 {
+                    width: 30%;
+                }
+                &.logo-image-5 {
+                    width: 30%;
+                }
+            }
+            
+        }
+    }
+
+    p {
+        text-align: center;
+
+        @include xl {
+            font-size: 1vmax;
+        }
+    }
+}

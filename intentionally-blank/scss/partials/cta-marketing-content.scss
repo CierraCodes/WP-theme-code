@@ -1,0 +1,698 @@
+.cta-marketing-content {
+    // padding-top: 1%;
+
+    .slick-dots {
+      
+
+        li button {
+            &:before {
+                font-size: 33px;
+            }
+        }
+
+        
+   }
+   
+//Global Styles
+    .container-fluid {
+        width: 85%;
+        margin: 0 auto;
+        padding: 2rem 0 0 0;
+
+        @include md {
+            width: 95%;
+            padding: 2rem;
+        }
+
+        @include xl {
+            width: 70%;
+            padding: 0;
+            // margin: 0 auto 3%;
+            // padding: 1% 1% 0 1%; 
+        }
+    }
+
+    .marketing-txt {
+        text-align: center;
+
+
+        @include xl {
+            // padding-top: 5%;
+            // margin-bottom: 4%;
+            text-align: center;
+        }
+
+
+        h1 {
+            font-family: 'AvenirSemiBold', sans-serif;
+            font-size: 2.5rem;
+
+            strong {
+                font-weight: bold;
+                color: $drk-green;
+            }
+
+            @include md {
+                font-size: 3.5rem;
+            }
+
+            @include xl {
+                font-size: 4.9vw;
+                margin-bottom: 2%;
+
+                
+            }
+        }
+
+        h2 {
+            font-family: 'AvenirReg', sans-serif;
+            font-size: 1.4rem;
+            padding: 0.5rem 0;
+
+            strong {
+                font-weight: bold;
+                color: $drker-green;
+            }
+
+          
+            @include xl {
+                font-size: 1.9vw;
+                margin-bottom: 2%;
+                padding: 0;
+            }
+        }
+
+        
+
+        hr {
+            background-color: #2C2E3A; 
+            width: 80%;
+            height: 3px;
+            margin: 1rem auto;
+            position: relative;
+            border: none;
+            display: none;
+
+            @include md {
+                display: block;
+            }
+
+            @include xl {
+                width: 76%;
+                margin: 2rem auto;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 12px;
+                background: #2C2E3A;
+                left: -12px;
+                
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                height: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 12px;
+                background: #2C2E3A;
+                right: -12px;
+            }
+        }
+
+        h3 {
+
+            font-family: "AvenirReg", sans-serif;
+            padding: 0.5rem 0;
+
+            strong {
+                font-weight: bold;
+                color: $drker-green;
+            }
+
+            @include md {
+               
+            }
+
+            @include xl {
+                font-size: 1.6vw;
+                padding: 0;
+                margin-bottom: 2rem;
+            }
+        }
+
+        p {
+            // padding-top: 3%;
+
+            font-family: 'CharterRegular', sans-serif;
+           
+            strong {
+                font-weight: bold;
+                color: $drker-green;
+            }
+
+           
+
+            @include xl {
+                font-size: 1vw;
+                margin-top: 1rem;
+            padding-top:    0;
+
+            }
+        }
+    }
+
+    .bubble-holder {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+        width: 100%;
+        margin: 1.5rem auto 1.5rem auto;
+        justify-content: center;
+
+       
+      
+
+        @include xl {
+            justify-content: center;
+            width: 76%;
+            margin: 13% auto 2rem auto;
+        }
+
+        .bubble-content {
+            width: 50%;
+            text-align: center;
+
+            @include sm {
+                width: 25%;
+                margin: 0;
+                text-align: center;
+            }
+
+            .bubble-bg {
+                position: relative;
+            }
+
+            img {
+                margin: 0 auto;
+                display: block;
+            }
+
+            span {
+                font-family: 'CharterRegular', sans-serif;
+                display: block;
+               
+                text-transform: uppercase;
+                font-weight: bold;
+                
+             
+                @include sm {
+                  
+                }
+
+                @include lg {
+                  
+                }
+
+                @include xl {
+                    font-size: 1vw;
+                }
+            }
+
+            &.bubble-1 {
+
+                @include md {
+                    margin-top: -4%;
+                }
+
+                .bubble-bg {
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 80%;
+                        height: 67%;
+                        left: -30%;
+                        bottom: 0;
+                        border-radius: 50%;
+                        background-color: rgba(160, 172, 182, 0.7);
+                        z-index: -1;
+                        transform: translatey(0px);
+                        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                        animation: floatUp 10s ease-in-out infinite;
+                    }
+                }
+            }
+
+            &.bubble-2 {
+                margin-top: 3rem;
+
+                .bubble-bg {
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 119%;
+                        height: 101%;
+                        right: -55%;
+                        top: -27%;
+                        border-radius: 50%;
+                        background-color: rgba(160, 172, 182, 0.7);
+                        z-index: -1;
+                        transform: translate(-65px);
+                        animation: floatUpnDown 10s ease-in-out infinite;
+                        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+
+                    }
+                }
+
+            }
+
+            &.bubble-3 {
+
+                @include md {
+                    margin-top: -4%;
+                }
+            }
+
+            &.bubble-4 {
+                margin-top: 3rem;
+
+                .bubble-bg {
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 80%;
+                        height: 67%;
+                        right: -30%;
+                        top: -19%;
+                        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                        border-radius: 50%;
+                        background-color: rgba(160, 172, 182, 0.7);
+                        z-index: -1;
+                        transform: translatey(0px);
+                        animation: floatDown 10s ease-in-out infinite;
+                    }
+                }
+
+            }
+        }
+
+        &.miami-bubble-holder {
+            
+            @include xl {
+                width: 100%;
+                margin: 2% auto;
+            }
+            .miami-bubble-content {
+                text-align: center;
+                padding: 0 0.4rem;
+
+                @include md {
+                    width: 33%;
+
+                }
+
+                @include xl {
+                    padding: 2%;
+                }
+
+                .bubble-bg {
+                    text-align: center;
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        margin:  0 auto;
+                        @include xl {
+                            width: 6vmax;
+                            height: 6vmax;
+                        }
+                    }
+                }
+
+                &.bubble-2 {
+                    position: relative;
+                    @include xl {
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            width: 3px; 
+                            background-color: $drk-green;
+                            height: 60%;
+                            bottom: 10%;
+                            left: 0;
+
+                        }
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            width: 3px;
+                            background-color: $drk-green;
+                            height: 60%;
+                            bottom: 10%;
+                            right: 0; 
+                        }
+                    }
+
+                }
+
+                p {
+                    font-family: 'CharterRegular', sans-serif;
+                    margin: 0;
+                    font-size: 0.8rem;
+
+                    @include sm {
+                        font-size: 1rem;
+                    }
+                    
+                    @include xl {
+                        font-size: 1vmax;
+                    }
+                }
+            }
+    
+        }
+
+        &.atlanta-bubble-holder {
+            
+            @include xl {
+                width: 100%;
+                margin: 0 auto 0 auto;
+            }
+            .atlanta-bubble-content {
+                text-align: left;
+
+                @include xl {
+                    width: 50%;
+                    padding: 2% 0;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .bubble-bg {
+                   @include xl {
+                     width: 25%;
+                   }
+                    img {
+                        @include xl {
+                          
+                        }
+                    }
+
+                }
+
+
+                span {
+                    font-family: 'CharterRegular', sans-serif;
+                    line-height: 1.4;
+                    @include xl {
+                        padding-left: 2%;
+                        width: 65%;
+                        font-size: 1.05vw;
+                    }
+                }
+            }
+    
+        }
+
+        &.la-bubble-holder {
+            @include xl {
+                width: 100%;
+                margin: 0 auto 0 auto;
+            }
+
+            .la-bubble-content {
+                @include xl {
+                    width: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .bubble-bg {
+
+                    @include xl {
+                        width: 52%;
+                    }
+                   
+                }
+
+                span {
+                    text-transform: uppercase;
+                    font-family: 'CharterRegular', sans-serif;
+                    text-align: center;
+
+                    @include xl {
+                        padding: 0 40%;
+                    }
+                  
+                }
+            }
+        }
+
+
+        &.service-bubble-holder {
+            background: transparent;
+
+            @include md {
+                width: 100%;
+                background: rgba(89, 113, 126, 0.7);
+               
+                justify-content: center;
+                margin: 1.5rem auto 1.5rem auto;
+            }
+
+            @include xl {
+                margin: 0 auto 0 auto;
+            }
+
+            h1 {
+                color: #000;
+                text-align: center;
+                font-size: 1.5rem;
+
+                @include md{
+                    padding-top: 1%;
+                    color: #fff;
+                }
+
+                @include xl {
+
+                    padding-top: 1.5%;
+                }
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+                @include md {
+                    width: 90%;
+                    padding: 1%;
+                }
+
+                @include xl {
+                    width: 70%;
+                    padding: 2% 0;
+                }
+            }
+
+            .service-bubble-content {
+                text-align: center;
+                width: 50%;
+                padding: 2%;
+                position: relative;
+                transform: scale(1);
+                transition: all 0.5s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                @include md {
+                    width: 25%;
+                    padding: 1%;
+                }
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .bubble-bg { 
+                    width: 50%;
+                    margin: 0 auto;
+              
+
+                    @include md {
+                        width: 52%;
+                    
+                    }
+
+                    @include lg {
+                        width: 40%;
+                    }
+
+                    @include xl {
+                        width: 6vmax;
+                        height: 6vmax;
+                        margin-bottom: 4%;
+                    }
+
+                   
+                   
+                }
+
+                span {
+                    text-transform: uppercase;
+                    font-family: 'AvenirSemiBold', sans-serif;
+                    text-align: center;
+                    color: #000;
+                    font-size: 0.8rem;
+
+                    @include md {
+                        font-size: 1rem;
+                        color: #fff;
+                    }
+
+                    @include xl {
+                      color: #fff;
+                      font-size: 1.8vw;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+
+//New York Page specifically 
+    &#ny-marketing {
+
+        .marketing-txt {    
+
+            
+            @include xl {
+                margin-bottom: 1%;
+            }
+            
+            h1 {
+                &:last-of-type  {
+                    font-size: 1.5rem;
+                    padding: 0.5rem 0;
+
+                    @include md {
+                        font-size: 3.5rem;
+                    }
+                }
+
+               
+
+                @include xl {
+                    margin-bottom: 1%;
+                    margin-top: 0;
+
+                    &:last-of-type  {
+                        font-size: 4.9vw;
+                        padding: 0;
+                    }
+                }
+
+                
+            }
+
+            h2 {
+           
+                font-size: 1rem;
+
+                @include md {
+                    font-size: 2rem;
+                }
+
+                @include xl {
+                    margin-top: 1%;
+                font-size: 2.5vw;
+                margin-bottom: 2%;
+               
+
+                }
+            }
+            
+        }
+
+        .bubble-2:before, .bubble-2:after {
+            background-color: $blue;
+        }
+       
+    }
+
+    &#la-marketing {
+
+        .marketing-txt {    
+
+            @include xl {
+                margin-bottom: 1%;
+            }
+           
+            
+            h1 {
+                &:last-of-type  {
+                    font-size: 1.5rem;
+                    padding: 0.5rem 0;
+
+                    @include md {
+                        font-size: 3.5rem;
+                    }
+                }
+
+                
+
+                @include xl {
+                    margin-bottom: 1%;
+                    margin-top: 0;
+
+                    &:last-of-type  {
+                        font-size: 4.9vw;
+                        padding: 0;
+                    }
+                }
+
+                
+            }
+
+            h2 {
+             
+                font-size: 1rem;
+
+                @include md {
+                    font-size: 2rem;
+                }
+
+                @include xl {
+                    margin-top: 1%;
+                font-size: 2.5vw;
+                margin-bottom: 2%;
+               
+
+                }
+            }
+            
+        }
+
+       
+       
+    }
+
+    
+}

@@ -1,0 +1,110 @@
+$screen-sm-min: 551px;
+$screen-md-min: 768px;
+$screen-lg-min: 1024px;
+$screen-xl-min: 1280px; 
+$screen-xll-max: 1279px;
+$screen-xl-max: 1365px; 
+$screen-xxl-min: 1536px; 
+
+// $screen-sm-min: 551px; 
+// $screen-md-min: 769px;
+// $screen-lg-min: 1025px;
+// $screen-xl-min: 1279px; 
+// $screen-xll-max: 1278px;
+// $screen-xl-max: 1365px; 
+// $screen-xxl-min: 1536px; 
+@mixin sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   } 
+}
+@mixin md {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+@mixin lg {
+   @media (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
+
+@mixin xxl {
+    @media (min-width: #{$screen-xxl-min}) {
+        @content;
+    }
+ }
+
+
+
+
+
+
+// @mixin custom($min, $max) {
+//    @media (min-width: $min+'px') and (max-width: $max+'px') {
+//        @content;
+//    }
+// }
+
+@mixin sml {
+   @media (max-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+@mixin mdl {
+   @media (max-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+@mixin lgl {
+   @media (max-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+@mixin xll {
+   @media (max-width: #{$screen-xl-max}) {
+       @content;
+   }
+}
+
+@mixin xlm {
+   @media (max-width: #{$screen-xll-max}) {
+       @content;
+   }
+}
+// @mixin customl($min, $max) {
+//    @media (min-width: $min+'px') and (max-width: $max+'px') and (orientation: landscape){
+//        @content;
+//    }
+// }
+
+@mixin smp {
+   @media (max-width: #{$screen-sm-min}) and (orientation: portrait) {
+       @content;
+   }
+}
+@mixin mdp {
+   @media (max-width: #{$screen-md-min}) and (orientation: portrait) {
+       @content;
+   }
+}
+@mixin lgp {
+   @media (max-width: #{$screen-lg-min}) and (orientation: portrait){
+       @content;
+   }
+}
+@mixin xlp {
+   @media (max-width: #{$screen-xl-min}) and (orientation: portrait){
+       @content;
+   }
+}
+// @mixin customp($min, $max) {
+//    @media (min-width: $min+'px') and (max-width: $max+'px') and (orientation: portrait){
+//        @content;
+//    }
+// }

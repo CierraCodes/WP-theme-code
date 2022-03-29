@@ -1,0 +1,289 @@
+.lg-bnr-home {
+    padding: 0 !important;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+
+
+    &.tx-blue {
+        background-position: 66%;
+
+        @include md {
+            background-position: top center;
+        }
+
+        @include xl {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        &:before {
+            content: "";
+            background-color: $bluetx;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+    }
+
+    .container-fluid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 1rem;
+
+
+        @include md {
+            width: 75%;
+        }
+
+        @include xl {
+            width: 33%;
+        }
+
+
+        .city-holder {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 90%;
+
+
+            @include xl {
+                width: 100%;
+            }
+
+
+
+
+            .lg-bnr-city-icon {
+                z-index: 0;
+                position: relative;
+                text-align: center;
+                width: 25%;
+
+                &.lg-bnr-city-icon-0 {
+                    h1 {
+                        background: #59717e;
+
+                        &:before {
+                            background: #59717e;
+                        }
+                    }
+                }
+
+                &.lg-bnr-city-icon-1 {
+                    h1 {
+                            background: #dccfa8;
+
+                            &:before {
+                                background: #dccfa8;
+                            }
+                    }
+                }
+
+                &.lg-bnr-city-icon-2 {
+                    h1 {
+                        background: #698c8f;
+
+                        &:before {
+                            background: #698c8f;
+                        }
+                    }
+                }
+
+                &.lg-bnr-city-icon-3 {
+                    h1 {
+                        background : #cea295;
+
+                        &:before {
+                            background: #cea295;
+                        }
+
+
+                    }
+                }
+
+                a {
+                    color: inherit;
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+
+                    h1 {
+                        font-size: 1.2rem;
+                        background: #fff;
+                        padding: 10px 18px;
+                        position: absolute;
+                        top: 0;
+                        font-family: 'AvenirSemiBold', sans-serif;
+                        letter-spacing: 1px;
+                        color: #fff;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-radius: 25px;
+                        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                        opacity: 0;
+                        pointer-events: none;
+                        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                        width: 160%;
+
+
+                        @include sm {
+                            width: 110%;
+                        }
+
+                        @include xl {
+                            width: 130%;
+                            font-size: 1vw;
+                        }
+                        
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            height: 15px;
+                            width: 15px;
+                            background: #fff;
+                            bottom: -5px;
+                            left: 50%;
+                            transform: translateX(-50%) rotate(45deg);
+                        }
+                    }
+
+                    img {
+                        width: 4rem;
+
+
+                        @include xl {
+                            width: 45%;
+                        }
+
+
+                        &.hover-one {}
+                    }
+                }
+
+                &.not-active {}
+
+                &.active {
+
+                    a {
+
+                        h1 {
+                            top: -70px;
+                            opacity: 1;
+                            pointer-events: auto;
+
+                            @include xl {
+                                top: -100%;
+                            }
+                        }
+
+                        img {}
+                    }
+                }
+
+            }
+        }
+
+        .logo-holder-hp {
+            text-align: center;
+            width: 90%;
+
+            @include xl {
+                width: 85%;
+            }
+
+            &:before {
+                content: '';
+                width: 15%;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                background: #000;
+
+                @include sm {
+                    width: 20%;
+
+                }
+            }
+
+            &:after {
+                content: ' ';
+                width: 15%;
+                height: 2px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                background: #000;
+
+                @include sm {
+                    width: 20%;
+                }
+            }
+
+            img {
+                width: 60%;
+
+                @include sm {
+                    width: 50%
+                }
+
+
+            }
+        }
+
+        .slogan-holder {
+            width: 90%;
+  
+            @include xl {
+                width: 100%;
+                min-height: 5vh;
+            }
+
+            .slogan-hide {
+                display: none;
+            }
+
+            p{
+                color: #3b5c6b;
+                text-align: center;
+                font-family: 'SigniaProReg';
+                font-style: italic;
+                font-size: 1rem;
+
+                @include sm {
+                    
+                }
+
+                @include md {
+
+                }
+
+                @include lg {
+
+                }
+
+                @include xl {
+                    font-size: 0.85vw;
+                }
+            }
+        }
+
+    }
+}

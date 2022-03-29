@@ -1,0 +1,736 @@
+
+#contact-page-form {
+    padding-bottom: 0;
+    height: 100vh;
+        .contact-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            .contact-left {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 30%;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                display: none;
+                color: #fff;
+
+                
+                @include md {
+                    display: flex;
+                }
+
+                h1 {
+                    font-family: 'AvenirSemiBold', sans-serif;
+                    text-transform: uppercase;
+                    margin: 0;
+                    padding-top: 47%;
+                    color: #ffd200;
+                    filter: drop-shadow(2px 3px 8px black);
+                    @include xl {
+                        font-size: 2.6vw;
+                    }
+
+                    span {
+                        font-size: 1.1vw;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    padding-top: 0;
+                    @include xl {
+                        font-size: 1.1vw;
+                        font-family: "CharterRegular", sans-serif;
+                        text-transform: capitalize;
+                        
+                    }
+                   
+                }
+            }
+            
+            .contact-right {
+                width: 85%;
+                margin: 0 auto;
+                text-align: center;
+
+                @include md {
+                    width: 70%;
+                   
+                }
+            }
+        }
+    
+}
+
+//specific form on contact page
+.page-id-1108 #contact-page-form {
+   
+    div#gform_wrapper_6 {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gform_page_footer {
+        @include sm {
+            display: flex;
+            justify-content: space-evenly;  
+            position: relative;
+        }
+    }
+
+    .gf_progressbar_wrapper {
+        display: none;
+    }
+
+    .gform_title {
+      
+        display: none;
+
+        @include md {
+            font-size: 7vw;
+        }
+
+
+        @include xl {
+            font-size: 3.6vw;
+            font-family: 'AvenirSemiBold', sans-serif;
+            text-transform: uppercase;
+        }
+    }
+
+    .gform_body {
+        p {
+            font-family: "CharterRegular", sans-serif;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 4vw;
+            margin: 0;
+            padding-top: 0;
+            @include md {
+                font-size: 3vw;
+            }
+
+            @include lg {
+
+            }
+
+            @include xl {
+                font-size: 1.3vw;
+                // padding-top: 3%;
+            }
+        }
+
+        @include xl {
+//  padding-top: 3%;
+            width: 65%;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    #field_6_40 {
+
+        .ginput_container.ginput_container_checkbox {
+            @include xl {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+       
+    }
+
+    .contact-header-holder {
+        text-transform: uppercase;
+        font-family: 'AvenirReg', sans-serif;
+        display: flex;
+        justify-content: center;
+        // margin-top: 8%;
+        align-items: center;
+        
+        @include xl {
+            margin-top: 4%;
+            margin-bottom: 1%;
+        }
+
+    
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        img {
+            
+               
+
+                @include xl {
+                    width: 2vmax;
+                    height: 2vmax;    
+                }
+            
+        }
+
+        h1 {
+            margin: 0;
+            font-family: 'AvenirReg', sans-serif;
+            font-size: 1.5rem;
+            text-align: left;
+            padding-left: 1rem;
+
+            @include md {
+                font-size: 4vw;
+            }
+
+            @include xl {
+                text-align: center;
+                padding-left: 2%;
+                font-size: 1.7vmax;
+            }
+        }
+    }
+
+    .gfield input {
+        color: #000;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #7E7E7E;
+        font-family: 'CharterRegular', sans-serif;
+
+        @include xl {
+            width: 65%;
+        }
+
+        &.hasDatepicker {
+            margin: 0 auto;
+        }
+
+        &:focus {
+            border-bottom: 1px solid #7E7E7E;
+            outline: none;
+            color: #000;
+        }
+
+
+    }
+
+    .gform_page_footer input,
+    .button.form-btn {
+        background: rgba(41, 72, 89, 0.5) !important;
+        padding: 0.5rem;
+        border: none !important;
+        color: #fff !important;
+        border-radius: 7px;
+        font-family: 'AvenirReg', sans-serif;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 13px;
+
+        @include xl {
+            font-size: 1vw;
+            padding: 0.7% 3%;
+            line-height: 1.5;
+            margin: 0;
+        }
+    }
+
+    .gform_previous_button {
+        @include xl {
+            // margin-right: 11%;
+        }
+    }
+
+    
+
+    .gfield_label {
+        display: none;
+    }
+
+    input[type=checkbox]:checked+label {
+
+
+        @include xl {
+        
+        }
+
+    }
+
+    input.gfield-choice-input[type=checkbox]:not(:checked) {
+      
+        @include xl {
+            // width: 154px !important;
+            // height: 154px !important;
+            width: 5vmax!important;
+            height: 5vmax!important;
+            position: relative !important;
+          
+        }
+
+
+    }
+
+    input.gfield-choice-input[type=checkbox]:checked {
+        background-color: $drk-green!important;
+
+        @include xl {
+            width: 5vmax!important;
+            height: 5vmax!important;
+            position: relative !important;
+          
+        }
+
+
+
+    }
+
+    input.gfield-choice-input[type=checkbox]:checked + label {
+      
+
+        @include xl {
+            // width: 100% !important;
+            // height: 100% !important;
+            // display: flex;
+            // background-color: $drk-green!important;
+            // flex-direction: column;
+            // justify-content: flex-end;
+          
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    input#choice_6_19_1[type=checkbox]:not(:checked) {
+      
+        @include xl {
+            width: 15px !important;
+            height: 15px !important;
+            position: relative !important;
+          
+        }
+
+
+    }
+
+    input#choice_6_19_1[type=checkbox]:checked {
+        background-color: $drk-green!important;
+
+        @include xl {
+            width: 15px !important;
+            height: 15px !important;
+            position: relative !important;
+          
+        }
+
+
+
+    }
+
+    input#choice_6_19_1[type=checkbox]:checked + label {
+      
+
+        @include xl {
+            width: 100% !important;
+            background: transparent!important;
+            display: flex;
+            bottom: -2%;
+            flex-direction: column;
+            color: #000;
+            height: 100%!important;
+            padding-bottom: 0;
+            justify-content: flex-end;
+          
+        }
+
+
+
+    }
+
+    .gchoice.gchoice_6_19_1 {
+        height: 25px!important;
+
+        label {
+            position: relative!important;
+            bottom: 3%;
+            line-height: 1.4;
+            left: 50%;
+            display: flex;
+            font-size: 14px;
+            font-family: 'AvenirReg', sans-serif;
+            transform: translateX(-50%);
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .ginput_container.ginput_container_checkbox {
+        .gfield_checkbox {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gchoice {
+            position: relative;
+            margin-bottom: 1rem;
+            width: 33%;
+            height: 100px;
+
+            @include lg {
+                margin-bottom: 4%;
+                width: 33%;
+                height: 151px;
+            }
+
+            @include xl{
+                width: 33%;
+                height: auto;
+            }
+
+            .gfield-choice-input {
+                
+                @include xl {
+                    &:before {
+                        content: ' ';
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 8%;
+                        left: 8%;
+                       
+
+                    }
+                }
+            }
+
+            label {
+              
+                line-height: 1.4;
+                font-family: 'AvenirReg', sans-serif;
+                font-size: 13px;
+                width: 100%;
+
+                @include xl {
+                    font-size: 0.9vw;
+                    padding-top: 5%;
+                }
+               
+
+            }
+
+
+
+
+
+
+
+
+
+
+        }
+
+    }
+
+    #choice_6_40_1 {
+        &:after {
+            content: ' ';
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            background-image: url(/wp-content/uploads/Brand.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            left: 50%;
+            top: 72%;
+            transform: translate(-50%, -50%);
+
+            @include sm {
+                width: 27%;
+                top: 50%;
+            }
+
+
+            @include xl {
+                width: 50%;
+            }
+        }
+
+    }
+
+    #choice_6_40_2 {
+        &:after {
+            content: ' ';
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            background-image: url(/wp-content/uploads/Experiential-Event.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            left: 50%;
+            top: 72%;
+            transform: translate(-50%, -50%);
+
+            @include sm {
+                width: 27%;
+            top: 50%;
+
+            }
+
+
+            @include xl {
+                width: 50%;
+            }
+        }
+    }
+
+    #choice_6_40_3 {
+        &:after {
+            content: ' ';
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            background-image: url(/wp-content/uploads/Digital-Design-.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            left: 50%;
+            top: 72%;
+            
+            transform: translate(-50%, -50%);
+
+            @include sm {
+                width: 27%;
+            top: 50%;
+
+            }
+
+
+            @include xl {
+                width: 50%;
+            }
+        }
+    }
+
+    #choice_6_40_4 {
+        &:after {
+            content: ' ';
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            background-image: url(/wp-content/uploads/Content-Creation.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            left: 50%;
+            top: 72%;
+            transform: translate(-50%, -50%);
+
+            @include sm {
+                width: 27%;
+            top: 50%;
+
+            }
+
+
+            @include xl {
+                width: 50%;
+            }
+        }
+    }
+
+    #choice_6_40_5 {
+        &:after {
+            content: ' ';
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            background-image: url(/wp-content/uploads/Marketing.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            left: 50%;
+            top: 72%;
+
+            transform: translate(-50%, -50%);
+
+            @include sm {
+                width: 27%;
+            top: 50%;
+
+            }
+
+
+            @include xl {
+                width: 50%;
+            }
+        }
+    }
+
+    #choice_6_40_6 {
+        &:after {
+            content: ' ';
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            background-image: url(/wp-content/uploads/Social-Media-1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            left: 50%;
+            top: 72%;
+
+            transform: translate(-50%, -50%);
+
+            @include sm {
+                width: 27%;
+            top: 50%;
+
+            }
+
+
+            @include xl {
+                width: 50%;
+            }
+        }
+    }
+
+    #field_6_28 {
+        textarea {
+            border: 0;
+
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+    }
+    
+    #gform_page_6_10 {
+
+        #field_6_34 {
+            table {
+                background: transparent;
+            }
+
+            table table {
+                background: transparent;
+                tbody {
+                    background: transparent;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto;
+                    
+                    tr:nth-child(odd) {
+                        background: transparent;
+                        align-self: center;
+                        justify-self: flex-end;
+                        
+                        strong {    
+                            font-family: 'AvenirSemiBold', sans-serif;
+                            color: $drker-green;
+    
+                            @include xl {
+                                font-size: 1.3vmax;
+                            }
+
+                            &:after {
+                                content: ' :';
+    
+                            }
+                        }
+                    }
+        
+                    tr:nth-child(even) {
+                        background: transparent;
+                        padding: 2%;
+                        strong {
+                            font-family: 'AvenirSemiBold', sans-serif;
+                            color: #000;    
+
+                            @include xl {
+                                font-size: 1.1vmax;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .gform_page_fields {
+            background: transparent;
+            padding-top: 10%;
+        }
+
+        
+    }
+   
+}
+
+.noUi-connect {
+    background: transparent!important;
+}
+
+
+#gform_ajax_spinner_6 {
+    // display: none;
+    width: 2rem;
+    position: absolute;
+   right: 0;
+}

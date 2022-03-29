@@ -1,0 +1,473 @@
+
+.page-id-1125 {
+    .scroll-icon-holder {
+        @include xl {
+            
+        }
+
+        icon {
+            color: #fff;
+        }
+
+       
+    }
+
+    #story-first-copy-section {
+        
+
+        p {
+            @include xl {
+                padding: 1% 0;
+            }
+        }
+
+        strong {
+            color: #000;
+        }
+    }
+
+    .single-content-holder {
+        h3 {
+            font-family: 'AvenirReg', sans-serif;
+            padding: 1% 0;
+        }
+    }
+
+    @include xl {
+        .like-what-you-see {
+            background-color: #fff;
+    
+            h1 {
+                color: #445064;
+                line-height: 1.2;
+            }
+        }
+    
+        .like-what-you-see .like-what-you-see-right .global-cta-btn {
+            padding: 2.5% 9%;
+        }
+
+        .like-what-you-see .like-what-you-see-left {
+            
+        width: 52%;
+
+        }
+    }
+
+    
+
+
+    #story-page-branding-cards {
+
+        .container-fluid {
+           display: flex;
+           flex-direction: column;
+
+           .branding-cards-txt-holder {
+                order: 1;
+           }
+
+           .branding-cards-holder {
+                order: 2;
+           }
+
+           .global-cta-holder { 
+                order: 3;
+           }
+        }
+
+        strong {
+            color: $drk-green;
+            text-transform: uppercase;
+        }
+
+        .branding-cards-txt-holder {
+            position: relative;
+
+            .hr-holder {
+                position: absolute;
+                transform: translateX(-50%);
+                left: 0;
+                top: 24%;
+                width: 28%;
+            
+
+                hr{
+                    background: #2c2e3a;
+
+                    &:after {
+                        background: #2c2e3a;
+                    }
+                }
+               
+            }
+
+            .sub-text-holder {
+                text-align: center;
+                width: 100%;
+                margin-left: 0;
+
+                p {
+                    position: static;
+                }
+            }
+        }
+
+        
+
+        a {
+            display: none;
+            
+        
+        }
+
+        .branding-cards-holder {
+            background-color: rgba(44, 46, 58, 85);
+
+            @include xl {
+                margin: 4.5% auto 0;
+                // margin: 3.5% auto 3.5%;
+            }
+
+            .branding-cards {
+
+                &:hover {
+                    transform: none;
+                }
+                @include xl {
+                    width: 45%;
+                    margin: 0;
+                    margin: -2% 2% -2% 2%;
+                }
+
+                &.branding-card-1 {
+                    @include xl {
+                        
+                       
+                    }
+                }
+
+                &.branding-card-2 {
+                    .branding-content { 
+
+                        @include xl {
+                            p {
+                                padding: 2.5% 0;
+                                margin: 0;
+                            }     
+                        }
+                    }
+                   
+                }
+
+                hr {
+                    background-color: #000;
+                }
+
+                .branding-content {
+                    @include xl {
+                        margin: 0 9%;
+                        padding: 0;
+                    }
+
+                    p {
+                        @include xl {
+                            text-align: left;
+                            list-style:disc outside none;
+                            display: list-item;
+                            padding: 1% 0;
+                        }
+
+                        strong {
+                            color: $drk-green;
+                        }
+                    }
+
+                    &.branding-card-2 {
+                        @include xl {
+                            p {
+                                padding: 2% 0;
+                                margin: 0;
+                            }     
+                        }
+                    }
+                }
+            }
+        }
+
+        .tagline-checked-1 {
+           background: #2c2e3a;
+
+           &:after {
+            background: #2c2e3a;
+           }
+        }
+
+        .taglinee {
+            font-family: 'CharterRegular', sans-serif;
+                text-transform: inherit;
+            @include xl {
+                width: 55%;
+                margin: 0 auto;
+                padding-top: 2.5%;
+                text-align: left;
+            }
+        }
+    }
+
+    
+
+    #story-logo-holder {
+        background-color: rgba(44, 46, 58, 85%);
+
+        @include xl {
+            margin: 0;
+            // padding: 0 0 6%;
+
+            .logo-section-holder .logos-holder {
+                max-width: 65%;
+            }
+        }
+
+        .branding-cards-txt-holder {
+            color: #fff;
+            hr {
+                background: #fff;
+     
+                &:after {
+                    background: #fff;
+                }
+     
+            }
+        }
+        
+    }
+}
+
+
+#story-double-content {
+    .container-fluid {
+        align-items: flex-start;
+        position: relative;
+        flex-direction: column;
+        padding-top: 0;
+        @include xl {
+            flex-direction: row;
+        }
+
+        
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 6vw;
+
+        @include md {
+            font-size: 7vw;
+        }
+
+        @include lg {
+            font-size: 5vw;
+        }
+
+        @include xl {
+            font-size: 2.6vw;
+            margin-bottom: 4%;
+        }
+    }
+
+    hr {
+        display: block;
+        height: 3px;
+        width: 100%;
+        border: 0px;
+        background: #000;
+
+        @include xl {
+            display: block;
+            height: 100%;
+            width: 2px;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            border: 0px;
+            background: #000;
+        }
+    }
+    strong {
+        color: #3D6D6F;
+    }
+
+    .content-right {
+        text-align: center;
+        @include xl {
+           
+            padding: 0 7% 0 7%;
+        }
+    }
+
+    .content-left {
+        padding: 3% 2% 8% 2% ;
+        text-align: center;
+
+        @include xl {
+           
+            padding: 0 7% 0 7%;
+        }
+
+        p {
+
+           
+           
+        }
+    }
+
+    p {
+        font-size: 3.5vw;
+
+        @include lg {
+            font-size: 2vw;
+        }
+
+        @include xl {
+            font-size: 1.2vw;
+        }
+    }
+}
+
+
+
+#story-page {
+  
+
+    .container-fluid {
+        width: 100%;
+    }
+
+    .single-service-icon-holder {
+        flex-wrap: wrap;
+
+        @include xl {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .single-service-icon-content {
+        width: 50%;
+        padding: 2%;
+
+        @include md {
+            width: 33%;
+        }
+    }
+
+    h1 {
+        font-family: 'CharterBold', sans-serif;
+        font-size: 7vw;
+
+        @include lg {
+            font-size: 5vw;
+        }
+
+        @include xl {
+            font-size: 3.5vw;
+        }
+    }
+
+    h2 {
+        font-size: 4.5vw;
+
+        @include md {
+            font-size: 3.5vw;
+        }
+
+        
+        @include lg {
+            font-size: 3vw;
+        }
+
+       
+    }
+
+
+    .icon-bg {
+        width: 100%;
+        height: 170px;
+
+        background-size: contain;
+
+        @include md {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            margin-bottom: 5%;
+        }
+
+        @include xl {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    h2 {
+        font-family: 'AvenirReg', sans-serif;
+        color: #fff;
+
+        @include xl {
+            font-size: 1.25vw;
+        }
+    }
+
+    span {
+        font-family: 'AvenirReg', sans-serif;
+        font-size: 5vw;
+        font-weight: bold;
+
+        @include md {
+            font-size: 3vw;
+        }
+
+        
+        @include lg {
+            font-size: 2vw;
+        }
+
+        @include xl {
+            font-size: 1.5vw;
+        }
+    }
+
+    p {
+        font-family: 'AvenirReg', sans-serif;
+        color: #fff;
+        font-size: 3.5vw;
+        margin-top: 2%;
+
+        @include md {
+            font-size: 2.1vw;
+        }
+
+        @include lg {
+            font-size: 1.5vw;
+        }
+        
+        @include xl {
+            font-size: 1.2vw;
+        }
+    }
+}
+
+#story-hero {
+    // background-color: #445064;
+    // background-blend-mode: overlay;
+
+    &.hero-with-text {
+        .container-fluid {
+            padding: 6% 6% 3% 3%;
+                align-items: flex-end;
+        }
+    }
+}
+

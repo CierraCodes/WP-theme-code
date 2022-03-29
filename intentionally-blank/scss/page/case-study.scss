@@ -1,0 +1,259 @@
+
+#main-content-case {
+
+    .cs-landing-page-hero {
+        padding: 0;
+        position: relative;
+        background-blend-mode: multiply;
+
+        &:before {
+            content: ' ';
+            position: absolute;
+            background: linear-gradient(to bottom, rgba(68, 80, 100, 0.8) 0%, rgba(68, 80, 100, 0) 75%);
+            background-blend-mode: multiply;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .cs-title-holder {
+        padding: 0;
+        text-align: center;
+        width: 85%;
+        margin: 0 auto;
+
+        @include md {
+            width: 70%;
+        }
+
+        h1 {
+            font-family: 'AvenirSemiBold', sans-serif;
+            text-transform: capitalize;
+
+            @include xl {
+                padding: 0; 
+                font-size: 4vw;
+            }
+        }
+
+        p{
+            font-family: 'AvenirReg', sans-serif;
+
+            @include md {
+                font-size: 1.4rem;
+            }
+            @include xl {
+                font-size: 1.9vmax;
+                padding: 0;
+                margin: 0 auto;
+                width: 55%;
+            }
+        }
+
+
+        @include xl {
+            width: 100%;
+            padding: 4.5% 0;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0;
+        text-transform: uppercase;
+       
+
+        @include xl {
+            font-size: 3vw;
+            padding-top: 5%;
+        }
+
+    
+
+    }
+
+    .main-bg {
+        padding: 2rem 0 0;
+        margin-top: -8px;
+
+      
+
+         @include xl {
+
+         }   
+        
+    }
+
+    .case-study-holder {
+        margin-top: 1rem;
+
+        @include xl {
+            margin: 0;
+        }
+
+        .container-fluid {
+            display: flex;
+            flex-wrap: wrap;
+            width: 85%;
+            margin: 0 auto;
+            background-color: rgba(212, 220, 224, 0.5);
+            border-radius: 5px;
+            padding: 0.3rem;
+
+            @include xl {
+                width: 70%;
+                padding: 1%;
+            }
+        }
+
+        .case-study-item {
+            background-size: cover;
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 31%;
+            margin: 1%;
+            padding-bottom: 24%;
+            transition: all 0.5s ease-in;
+
+            @include xl {
+                width: 31%;
+                margin: 0.5% auto;
+            }
+
+            &:hover {
+        
+                .full-color-holder {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+
+            .full-color-holder {
+                opacity: 0;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: all 0.5s ease-in;
+            }
+
+        
+
+            &.case-study-item-4 {
+                width: 97.5%;
+                margin: 1.5% auto;
+            }
+
+            .case-link {
+                display: block;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                position: absolute;
+                z-index: 1000;
+                .case-img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: auto;
+                    height: 60%;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    transition: opacity 0.5s ease-in;
+                }
+
+                .case-title {
+                    // position: absolute;
+                    // bottom: 0;
+                    // background-color: rgba(0, 0, 0, 0.5);
+                    // opacity: 0;
+                    // transition: opacity 0.5s ease-in;
+                    // text-align: center;
+                    // width: 100%;
+                    display: none;
+                    p {
+                        margin: 0;
+                        color: #fff;
+                        padding: 10px 0;
+                    }
+                }
+
+                &:hover {
+
+                    .case-overlay {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .like-what-you-see {
+        display: none;
+
+        @include md {
+            display: block;
+        }
+
+        background-color: rgba(41, 72, 89, 0.5);
+
+        @include xl {
+            padding: 1% 0;
+        }
+
+        .container-fluid {
+            width: 95%;
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+
+            @include xl {
+                width: 90%;
+                margin: 0 0 0 auto;
+                padding: 1% 0;
+            }
+        }
+
+        .like-what-you-see-left {
+            width: 52%;
+            text-align: left;
+         
+
+            h1 {
+                text-transform: uppercase;
+                padding: 0;
+                color: #fff;
+                font-family: 'AvenirReg', sans-serif;
+                font-size: 2rem;
+
+                @include xl {
+                    font-size: 1.5vw;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .like-what-you-see-right {
+          width: 48%;
+            text-align: left;
+
+            .global-cta-btn {
+
+                @include  xl {
+                    padding: 2.5% 5%;
+                }
+            
+            }
+        }
+    }
+}
